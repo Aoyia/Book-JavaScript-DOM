@@ -1,38 +1,46 @@
-body{
-    font-family: "Helvetica","Arial",serif;
+body {
+    font-family: "Helvetica", "Arial", serif;
     color: #333333;
-    background-color:#f5eec6;
-    margin-left:  10%;
+    background-color: #f5eec6;
+    margin-left: 10%;
 }
-h1{
+
+h1 {
     color: #222222;
     background-color: transparent;
 }
-a{
+
+a {
     color: #c60;
     background-color: transparent;
     font-weight: bold;
     text-decoration: none;
 }
-ul{
+
+ul {
     padding: 0;
 }
-li{
+
+li {
     float: left;
-    padding: 1em;
+    padding: 2em;
     list-style: none;
 }
-#imagegallery{
+
+#imagegallery {
     list-style: none;
 }
-#imagegallery li{
+
+#imagegallery li {
     display: inline;
 }
-#imagegallery li a img{
+
+#imagegallery li a img {
     border: 0;
     width: 150px;
 }
-#placeholder{
-    width: 800px;
+/* placeholder转移到js后css样式失效 */
+#placeholder {
+    width: 700px;
     margin-left: 1em;
 }
