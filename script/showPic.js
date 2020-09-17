@@ -10,30 +10,30 @@ function addLoadEvent(func) {
 		}
 	}
 }
-function insertAfter(newElement, targetElement) {
-	var parent = targetElement.parentNode;
-	if (parent.lastChild == targetElement) {
-		parent.appendChild(newElement);
-	} else {
-		parent.insertBefore(newElement, targetElement.nextSibling);
-	}
-}
-function preparePlaceholder() {
-	if (!document.getElementById("imagegallery")) {
-		return false;
-	}
-	var placeholder = document.createElement("img");
-	placeholder.setAttribute("id", "placeholder");
-	placeholder.setAttribute("src", "images/5.jpg");
-	placeholder.setAttribute("alt", "这是一个图片");
-	var description = document.createElement("p");
-	description.setAttribute("id", "description");
-	var desctext = document.createTextNode("这是一张美图");
-	description.appendChild(desctext);
-	var targetElement = document.getElementById("imagegallery");
-	insertAfter(placeholder, targetElement);
-	insertAfter(description, placeholder);
-}
+// function insertAfter(newElement, targetElement) {
+// 	var parent = targetElement.parentNode;
+// 	if (parent.lastChild == targetElement) {
+// 		parent.appendChild(newElement);
+// 	} else {
+// 		parent.insertBefore(newElement, targetElement.nextSibling);
+// 	}
+// }
+// function preparePlaceholder() {
+// 	if (!document.getElementById("imagegallery")) {
+// 		return false;
+// 	}
+// 	var placeholder = document.createElement("img");
+// 	placeholder.setAttribute("id", "placeholder");
+// 	placeholder.setAttribute("src", "images/5.jpg");
+// 	placeholder.setAttribute("alt", "这是一个图片");
+// 	var description = document.createElement("p");
+// 	description.setAttribute("id", "description");
+// 	var desctext = document.createTextNode("这是一张美图");
+// 	description.appendChild(desctext);
+// 	var targetElement = document.getElementById("imagegallery");
+// 	insertAfter(placeholder, targetElement);
+// 	insertAfter(description, placeholder);
+// }
 function showPic(whichpic) {
 	var source = whichpic.getAttribute("href");
 	var placeholder = document.getElementById("placeholder");

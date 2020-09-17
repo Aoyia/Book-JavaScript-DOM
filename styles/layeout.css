@@ -26,20 +26,19 @@ li {
     padding: 2em;
     list-style: none;
 }
-
 #imagegallery {
     list-style: none;
+    /* 设置列表首行的样式 */
 }
-
 #imagegallery li {
     display: inline;
+    /* 显示li在一行 */
 }
-
 #imagegallery li a img {
     border: 0;
     width: 150px;
 }
-/* placeholder转移到js后css样式失效 */
+/* placeholder转移到js*/
 #placeholder {
     width: 700px;
     margin-left: 1em;
